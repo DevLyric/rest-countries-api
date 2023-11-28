@@ -53,7 +53,7 @@ const FetchData = () => {
                     <p className="animate-bounce">Loading...</p>
                 ) : (
                     filteredData.map(item => (
-                        <Link className="w-full" key={item.name.common} to={item.cca3.toLowerCase()}>
+                        <Link className="w-max md:w-full" key={item.name.common} to={item.cca3.toLowerCase()}>
                             <CountryCard
                                 flag={item.flags.png}
                                 name={item.name.common}

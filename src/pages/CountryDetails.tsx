@@ -42,7 +42,7 @@ function CountryDetails() {
                         </div>
 
                         <div className="w-full max-w-xl flex flex-col justify-around">
-                            <h1 className="text-3xl font-semibold">{item.name.common}</h1>
+                            <h1 className="text-3xl font-semibold my-5">{item.name.common}</h1>
 
                             <div className="flex flex-col gap-5 md:flex-row md:justify-between">
                                 <div className="flex flex-col gap-2">
