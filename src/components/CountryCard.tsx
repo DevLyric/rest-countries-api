@@ -13,7 +13,7 @@ const CountryCard = ({ flag, name, population, region, capital }: CountryCardPro
 
     return (
         <div
-            className={`w-full max-w-xl h-96 rounded-md shadow-md ${
+            className={`w-full max-w-[344px] h-96 rounded-md shadow-md ${
                 themeCtx?.darkMode ? "bg-dark-mode-elements" : "bg-dark-mode-text-&-light-mode-elementes"
             }`}
         >
