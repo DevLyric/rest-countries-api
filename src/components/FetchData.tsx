@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { Country } from "../types/Country";
 
 const FetchData = () => {
-    const [items, setItems] = useState<string[]>([]);
+    const [items, setItems] = useState<Country[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
