@@ -14,7 +14,9 @@ const Filter = ({ onInputChange, onSelectChange, inputValue, selectValue }: Filt
     return (
         <section className="flex flex-col gap-8 my-12 md:flex-row md:justify-between">
             <div
-                className={`flex items-center gap-3 shadow-md w-full max-w-xl rounded px-5 themeCtx?.darkMode ? "bg-dark-mode-elements" : "bg-dark-mode-text-&-light-mode-elementes"`}
+                className={`flex items-center gap-3 shadow-md w-full max-w-xl rounded px-5 ${
+                    themeCtx?.darkMode ? "bg-dark-mode-elements" : "bg-dark-mode-text-&-light-mode-elementes"
+                }`}
             >
                 <Search />
                 <input
