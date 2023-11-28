@@ -48,12 +48,12 @@ const FetchData = () => {
                 selectValue={selectValue}
             />
 
-            <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20">
+            <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-20">
                 {loading ? (
                     <p className="animate-bounce">Loading...</p>
                 ) : (
                     filteredData.map(item => (
-                        <Link key={item.name.common} to={item.cca3.toLowerCase()}>
+                        <Link className="w-full" key={item.name.common} to={item.cca3.toLowerCase()}>
                             <CountryCard
                                 flag={item.flags.png}
                                 name={item.name.common}
